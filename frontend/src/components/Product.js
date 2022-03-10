@@ -11,8 +11,8 @@ function Product({ product }) {
         <Card.Img src={product.image}></Card.Img>
       </Link>
       <Card.Body as='div'>
-        <Link to={`/product/${product._id}`}>
-          <Card.Title>
+        <Link style={{ textDecoration: 'none' }} to={`/product/${product._id}`}>
+          <Card.Title as='div'>
             <strong>{product.name}</strong>
           </Card.Title>
         </Link>
